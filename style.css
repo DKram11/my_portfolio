@@ -19,17 +19,20 @@ body {
 
 /* Navbar section */
 nav {
-  /* border: 1px solid white; */
-  padding: 5px 80px;
+  border: 1px solid white;
+  padding: 10px 80px;
   display: flex;
   /* background-color: black; */
   align-items: center;
   position: absolute;
   width:100%;
 }
-
+nav > a {
+  padding-top: 5px;
+}
 nav > a > img{
   width: 50px;
+  border: 1px solid white;
 }
 
 .menu {
@@ -37,6 +40,7 @@ nav > a > img{
   gap: 50px;
   width: 100vw;
   justify-content: center;
+  border: 1px solid white;
 }
 
 ul{
@@ -122,7 +126,7 @@ ul > li > a:hover{
 
 .content-left-intro > .content-left-info{
   display: flex;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   margin-top: 15px;
   gap: 30px;
 }
@@ -180,15 +184,12 @@ ul > li > a:hover{
 /*  */
 /* Section Page */
 
-.about{
+/* .about{
   width: 100%;
   height: 100vh;
   padding: 0px 80px;
   border: 1px solid white;
-}
-
-
-
+} */
 
 
 
@@ -199,8 +200,9 @@ ul > li > a:hover{
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   
   nav{
-    padding: 5px 50px;
+    padding: 10px 50px;
     position: absolute;
+    border: 1px solid white;
   }
   .home{
     padding: 0px 50px;
@@ -252,7 +254,6 @@ ul > li > a:hover{
   .home{
     width: 100%;
     padding: 0px 30px;
-    border: 1px solid white;
   }
   .content-left-intro > h1{
     font-size: 40px;
@@ -275,7 +276,6 @@ ul > li > a:hover{
     font-size: 14px;
   }
   .content-right > .content-right-image img:nth-child(2){
-    border: 1px solid rgb(217, 107, 107);
     width: 100%;
 
   }
@@ -291,9 +291,13 @@ ul > li > a:hover{
 @media only screen and (min-width: 576px) and (max-width: 767px){
 
   nav {
-    padding: 5px 30px;
+    padding: 10px 30px;
     align-items: center;
     position: relative;
+    justify-content: space-between;
+  }
+  .menu{
+    display: none;
   }
   .home{
     padding: 0px 0px;
@@ -301,7 +305,7 @@ ul > li > a:hover{
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 1px solid white;
+    /* border: 1px solid white; */
   }
   .home > .content-left {
     width: 100%;
@@ -367,9 +371,14 @@ ul > li > a:hover{
 
 @media only screen and (max-width: 575px) {
   nav {
-    padding: 5px 30px;
+    padding: 8px 30px;
     align-items: center;
     position: relative;
+    justify-content: space-between;
+  }
+  .menu{
+    display: none;
+    /* border: 1px solid white; */
   }
   .home{
     padding: 0px 0px;
@@ -377,8 +386,7 @@ ul > li > a:hover{
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 1px solid white;
-    background-color: rgb(146, 0, 0);
+    /* border: 1px solid white; */
   }
   .home > .content-left {
     width: 100%;
@@ -399,7 +407,7 @@ ul > li > a:hover{
     text-align: center;
   }
   .content-left-intro > .content-left-info{
-    border: 1px solid white;
+    /* border: 1px solid white; */
     justify-content: center;
     align-items: center;
     
