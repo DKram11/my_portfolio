@@ -122,7 +122,7 @@ ul > li > a:hover{
 
 .content-left-intro > .content-left-info{
   display: flex;
-  /* border: 1px solid white; */
+  border: 1px solid white;
   margin-top: 15px;
   gap: 30px;
 }
@@ -288,7 +288,7 @@ ul > li > a:hover{
 }
 
 /* Break point for small screens */
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 576px) and (max-width: 767px){
 
   nav {
     padding: 5px 30px;
@@ -306,7 +306,7 @@ ul > li > a:hover{
   .home > .content-left {
     width: 100%;
     padding: 30px 30px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     height: 100vh;
   }
   .content-left-intro > h1{
@@ -354,9 +354,83 @@ ul > li > a:hover{
     width: 100%;
     position: relative;
     display: none;
+  }  
+  .content-right > .content-right-image img:nth-child(2){
+    width: 420px;
   }
-  .content-right > .content-right-image{
+  .content-right > .content-right-image img:nth-child(1){
+    width: 310px;
+    margin-top: 40px;
+    margin-left: 70px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  nav {
+    padding: 5px 30px;
+    align-items: center;
+    position: relative;
+  }
+  .home{
+    padding: 0px 0px;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 1px solid white;
+    background-color: rgb(146, 0, 0);
+  }
+  .home > .content-left {
+    width: 100%;
+    padding: 30px 30px;
+    /* border: 1px solid white; */
+    height: 100vh;
+  }
+  .content-left-intro > h1{
+    text-align: center;
+    font-size: 35px;
+  }
+  .content-left-intro > h2{
+    text-align: center;
+    font-size: 22px;
+  }
+  .content-left-intro > p{
+    font-size: 11px; 
+    text-align: center;
+  }
+  .content-left-intro > .content-left-info{
+    border: 1px solid white;
+    justify-content: center;
+    align-items: center;
     
+  }
+  .more-info > h2{
+    font-size: 12px;
+    font-weight: 400;
+    /* text-align: center; */
+  }
+  .more-info > p{
+    font-size: 10px;
+  }
+  .content-left-intro > .cv-hire{
+    justify-content: center;
+    margin-top: 40px;
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content-left-intro > .cv-hire button{
+    background: none;
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+
+  }
+
+  .home > .content-right {
+    width: 100%;
+    position: relative;
+    display: none;
   }  
   .content-right > .content-right-image img:nth-child(2){
     width: 420px;
